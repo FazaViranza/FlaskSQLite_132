@@ -15,7 +15,7 @@ def init_db():
     conn.execute('''CREATE TABLE IF NOT EXISTS books (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             judul VARCHAR(100) NOT NULL,
-            penulis VARCHAR(100) NOT NULL
+            penulis VARCHAR(100) NOT NULL,
         );''')
     conn.commit()
     conn.close()
